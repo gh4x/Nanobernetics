@@ -1,0 +1,15 @@
+{
+  "name": "Nanobernetics",
+  "scripts": {
+  },
+  "env": {
+  },
+  "formation": {
+  },
+  "addons": [
+
+  ],
+  "buildpacks": [
+
+  ]
+}
