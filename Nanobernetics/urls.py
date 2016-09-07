@@ -20,4 +20,6 @@ from welcome import views
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', views.home, name="homepage"),
+    url(r'^alpha/', views.alpha, name="alpha"),
+    url(r'^index/', views.index, name="index"),
 ]
