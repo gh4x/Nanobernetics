@@ -37,3 +37,8 @@ video {
 .nano-orange {
     color: orange;
 }
+
+#homeHeading {
+    background: #222;
+    opacity: 0.9;
+}

@@ -36,7 +36,11 @@
 </head>
 
 <body id="page-top">
-
+    <video poster="/static/images/construction.jpg" id="bgvid" playsinline autoplay muted>
+        <!-- WCAG general accessibility recommendation is that media such as background video play through only once. Loop turned on for the purposes of illustration; if removed, the end of the video will fade in the same way created by pressing the "Pause" button  -->
+        <source src="/static/videos/construction.webm" type="video/webm">
+        <source src="/static/videos/construction.mp4" type="video/mp4">
+    </video>
     <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -75,7 +79,7 @@
     <header>
         <div class="header-content">
             <div class="header-content-inner">
-                <h1 id="homeHeading">Optimizing nanotechnology to revolutionize precision oncology medicine.</h1>
+                <h1 id="homeHeading" class="nano-orange">Optimizing nanotechnology to revolutionize precision oncology medicine.</h1>
                 <hr>
                 <p>text could go here...</p>
                 <a href="#about" class="btn btn-primary btn-xl page-scroll">Find Out More</a>
@@ -141,14 +145,30 @@
                         <!-- <i class="fa fa-4x fa-paper-plane text-primary sr-icons"></i> -->
                         <img src="/static/images/Vanegas-Headshot.jpg" height="200px">
                         <h3>Camilo Vanegas</h3>
-                        <p class="text-muted">Camilo bio goes here</p>
+                        <p class="text-muted">Camilo grew up in Columbia, Maryland and attended the ARL Biotechnology
+                            career academy which forever changed his outlook on science. He continued to pursue and
+                            explore his passions in multiple labratories at the University of Maryland, College Park
+                            (UMCP) and graduated with a BS in Kinesiology. While attending UMCP he fell in love with
+                            improving the human condition and decided to attend the University of Maryland school of
+                            Medicine, Graduate Program in Life Sciences. He is currently a 4th year PhD candidate in
+                            the Molecular Medicine program working on understanding the mechanisms behind skeletal
+                            muscle movement with regards to calcium channels and interacting proteins . Camilo hopes to
+                            one day make biology as ubiquitous and user-friendly as an iPhone so that anyone can enjoy
+                            its beauty. </p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-4 text-center">
                     <div class="service-box">
-                        <i class="fa fa-4x fa-newspaper-o text-primary sr-icons"></i>
+                        <img src="/static/images/Weingarter-Headshot.png" height="200px">
                         <h3>Elizabeth Weingarter</h3>
-                        <p class="text-muted">Elizabeth Bio here</p>
+                        <p class="text-muted">Elizabeth is a PhD candidate in the Molecular Microbiology and
+                            Immunology Graduate Program at the University of Maryland, Baltimore. She is originally
+                            from Cincinnati, Ohio. Elizabeth graduated from DePauw University in 2013 with a BA in
+                            Biochemistry. Currently, she is focusing her thesis research on the functional status of
+                            regulatory T cells in Systemic Lupus Erythematosus. Elizabeth aspires to be build a career
+                            in which she will help turn promising research findings into treatment options for patients
+                            and caregivers. She is motivated by a desire to make in impact in disease treatment and
+                            management.</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-4 text-center">
@@ -184,7 +204,7 @@
 
     <section id="contact">
         <div class="container">
-            <div class="row">
+            <div class="row" id="homeHeading">
                 <div class="col-lg-8 col-lg-offset-2 text-center">
                     <h2 class="section-heading">Contact Us</h2>
                     <hr class="primary">
@@ -219,20 +239,6 @@
     <!-- Theme JavaScript -->
     <script src="/static/js/creative.min.js"></script>
 
-    <!-- Google ANalytics -->
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-      ga('create', 'UA-83876753-1', 'auto');
-      ga('send', 'pageview');
-
-    </script>
-
 </body>
-
-
 
 </html>
