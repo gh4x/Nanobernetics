@@ -35,10 +35,15 @@ video {
 }
 
 .nano-orange {
-    color: orange;
+    color: #F05F40;
 }
 
-#homeHeading {
-    background: #222;
-    opacity: 0.9;
+.transparent-black-bg {
+    #background: #222;
+    #opacity: 0.9;
+    background-color:rgba(0, 0, 0, 0.45);
+}
+
+.white-text {
+    color: #ffffff;
 }
