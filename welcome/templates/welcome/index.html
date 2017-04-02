@@ -201,48 +201,25 @@
                 <div class="col-lg-5">
                     <h2 class="text-center">Latest News</h2>
                     <hr class="light">
-                    <p>
-                        <a href="http://technical.ly/baltimore/2016/08/16/nanobernetics-umd-phd-camilo-vanegas-elizabeth-weingarter/" class="text-faded">
-                            <b>August 2016:</b> Technically features PhD students innovative passion for Baltimore start-up
-
-                        </a>
-                    </p>
-                    <p>
-                        <a href="http://elm.umaryland.edu/young-som-entrepreneurs-win-national-contest/" class="text-faded">
-                            <b>August 2016:</b> UMB highlights graduate student Co-Founders and Innovation Spotlight Award winners
-
-                        </a>
-                    </p>
-                    <p>
-                        <a href="http://www.prweb.com/releases/2016/07/prweb13575946.htm" class="text-faded">
-                            <b>July 2016:</b> NIH and CAI announce Nanobernetics as winners in the Nanotechnology Startup Challenge in Cancer
-                        </a>
-                    </p>
-                    <p>
-                         <a href="http://2016.baltimoreinnovationweek.com/" class="text-faded">
-                            <b>September 2016:</b> Nanobernetics attended the 2016 Baltimore Innovation Week
-                         </a>
-                     </p>
+                    {% for event in past_events %}
+                        <p>
+                            <a href="{{ event.link }}" class="text-faded">
+                                <b>{{ event.date }}</b> {{ event.summary }}
+                            </a>
+                         </p>
+                    {%  endfor %}
                 </div>
 
                 <div class="col-lg-5 col-lg-offset-2">
                     <h2 class="text-center">Upcoming</h2>
                     <hr class="light">
-                     <p>
-                         <a href="http://www.1stpitchlifescience.com/" class="text-faded">
-                            <b>October 26:</b> Attending 1st pitch Life sciences in Baltimore
-                         </a>
-                    </p>
-                    <p>
-                         <a href="http://tedco.md/events/entrepreneur-expo-2016/" class="text-faded">
-                            <b>November 14:</b>Nanobernetics will attend 6th annual Entrepreneurship Expo
-                         </a>
-                    </p>
-                    <p>
-                         <a href="http://medschool.umaryland.edu/osa/lightbulbmoment.asp" class="text-faded">
-                            <b>February 27, 2017:</b>Nanobernetics will compete in Light Bulb Moment Competition
-                         </a>
-                    </p>
+                    {% for event in upcoming_events %}
+                        <p>
+                            <a href="{{ event.link }}" class="text-faded">
+                                <b>{{ event.date }}</b> {{ event.summary }}
+                            </a>
+                         </p>
+                    {%  endfor %}
                 </div>
 
                 <div class="col-lg-8 col-lg-offset-2 text-center">
