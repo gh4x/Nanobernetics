@@ -16,4 +16,4 @@ def index(request):
     today = date.today()
     past_events = Event.objects.filter(date__lt=today, visible__exact=True)
     upcoming_events = Event.objects.filter(date__gte=today, visible__exact=True)
-    return render(request, 'welcome/index.html', {'past_events': past_events}, {'upcoming_events': upcoming_events})
+    return render(request, 'welcome/index.html', {'past_events': past_events, 'upcoming_events': upcoming_events})
