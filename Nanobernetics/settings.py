@@ -74,12 +74,14 @@ WSGI_APPLICATION = 'Nanobernetics.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/1.10/ref/settings/#databases
-
+import dj_database_url
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    }
+    'default': dj_database_url.config(default='postgres://vudfngjuxbijgd:T_CZyTmVJALomMfn0rR9LJAp9b@ec2-184-73-202-229.compute-1.amazonaws.com:5432/dag48493sv38qm')
+
+    #'default': {
+    #    'ENGINE': 'django.db.backends.sqlite3',
+    #    'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+    #}
 }
 
 
