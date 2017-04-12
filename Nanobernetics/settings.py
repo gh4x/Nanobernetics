@@ -25,7 +25,7 @@ SECRET_KEY = 'hf(*qfr0vq#1rau(b5yhfyfd*zew!_$o__#nc5-2g4^6-_yc=0'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['nanobernetics.herokuapp.com']
+ALLOWED_HOSTS = ['www.nanobernetics.com', 'nanobernetics.com' , 'nanobernetics.herokuapp.com', 'localhost']
 
 
 # Application definition
