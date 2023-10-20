@@ -1,5 +1,6 @@
 {
   "name": "Nanobernetics",
+  "stack": "heroku-22",
   "scripts": {
   },
   "env": {
