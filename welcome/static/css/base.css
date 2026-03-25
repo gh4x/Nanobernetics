@@ -19,3 +19,31 @@ video {
 .stopfade {
    opacity: .5;
 }
+
+#logo {
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+.social-icons {
+    margin-left: 40%;
+    margin-right: 40%;
+}
+
+.bg-white-transparent {
+    opacity: 0.9;
+}
+
+.nano-orange {
+    color: #F05F40;
+}
+
+.transparent-black-bg {
+    #background: #222;
+    #opacity: 0.9;
+    background-color:rgba(0, 0, 0, 0.45);
+}
+
+.white-text {
+    color: #ffffff;
+}
